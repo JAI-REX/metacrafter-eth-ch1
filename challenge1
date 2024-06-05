@@ -1,0 +1,43 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.8.25;
+contract deplay_contract{
+    uint  num1;
+    int  num2;
+    bool b;
+    string  c;
+    address  a;
+    
+    function setuint(uint _num1)public{
+        num1=_num1;
+    }
+    function getuint()public view returns(uint){
+        return num1;
+    }
+    function setint(int _num2)public{
+        num2=_num2;
+    }
+    function getint()public view returns(int){
+        return num2;
+    }
+    function setbool(bool _b)public{
+        b=_b;
+    }
+    function getbool()public view returns(bool){
+        return b;
+    }
+    function setstring(string memory _c)public{
+        c=_c;
+    }
+    function getstring()public view returns(string memory){
+        return c;
+    }
+    function setaddress(address _a)public{
+        a=_a;
+    }
+    function getaddress()public view returns(address){
+        return a;
+    }
+    
+
+}
